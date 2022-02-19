@@ -88,3 +88,29 @@ def openVault():
         
         lbl2=ttk.Label(window2,text="")
         lbl2.pack()
+
+        def savePassword():
+            if Mstr_pass_txt.get()==Mstr_pass_txt2.get() :
+                sql="DELETE FROM masterpassword WHERE id=1"
+                cursor.execute(sql)
+
+                hashed_pass=hashPassword(Mstr_pass_txt.get().encode('utf-8'))
+                key=str(uuid.uuid4().hex)
+                
+                recoverykey=hashPassword(key.encode('utf-8'))
+                global encryptionkey 
+                encryptionkey= base64.urlsafe_b64encode(kdf.derive("PremWagh2210".encode('utf-8')))
+                
+                insert_pass="""INSERT INTO masterpassword(password,recoverykey)
+                VALUES(?,?)"""
+                cursor.execute(insert_pass,((hashed_pass),(recoverykey)))
+                db.commit()
+                recoveryScreen(key)
+            else:
+                Mstr_pass_txt2.delete(0,'end')
+                lbl2.config(text="TRY AGAIN !")
+
+
+
+        btn=ttk.Button(window2,text="SAVE",command=savePassword)
+        btn.pack(pady=10)
