@@ -32,3 +32,24 @@ def openVault():
         iterations=100000,
         backend=backend
     )
+    def encrypt(message:bytes,key:bytes)-> bytes:
+        return Fernet(key).encrypt(message)
+
+    def decrypt(message:bytes,token:bytes)-> bytes:
+        return Fernet(token).decrypt(message)
+
+    with sqlite3.connect("password-vault.db") as db:
+        cursor=db.cursor()
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS masterpassword( 
+    id INTEGER PRIMARY KEY,
+    password TEXT NOT NULL,
+    recoverykey TEXT NOT NULL);
+    """)
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS vault(
+    id INTEGER PRIMARY KEY,
+    ACCOUNT TEXT NOT NULL,
+    USERNAME TEXT NOT NULL,
+    PASSWORD TEXT NOT NULL);
+    """)
