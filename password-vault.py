@@ -53,3 +53,38 @@ def openVault():
     USERNAME TEXT NOT NULL,
     PASSWORD TEXT NOT NULL);
     """)
+    def popUp(text,previous_txt=""):
+        answer=simpledialog.askstring("input string",prompt=text,initialvalue=str(previous_txt))
+        return answer
+
+    window2=Toplevel(window)
+    window2.protocol("WM_DELETE_WINDOW",on_closing)
+    
+    window2.title("PASSWORD MANAGER")
+    def hashPassword(input):
+        # hash=hashlib.sha256(input)
+        # hash=hash.hexdigest()
+        return hashlib.sha256(input).hexdigest()
+
+    def firstScreen():
+        for widget in window2.winfo_children():
+            widget.destroy()
+        window2.geometry("250x150")
+
+        lbl=ttk.Label(window2,text="Create Master Password")
+        lbl.config(anchor=CENTER)
+        lbl.pack()
+
+        Mstr_pass_txt=ttk.Entry(window2,width=20,show="*")
+        Mstr_pass_txt.pack()
+        Mstr_pass_txt.focus()
+
+        lbl1=ttk.Label(window2,text="Confirm Master Password")
+        lbl1.pack() 
+        
+        Mstr_pass_txt2=ttk.Entry(window2,width=20,show="*")
+        Mstr_pass_txt2.pack()
+        
+        
+        lbl2=ttk.Label(window2,text="")
+        lbl2.pack()
