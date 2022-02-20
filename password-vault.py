@@ -213,7 +213,7 @@ def openVault():
         
         login_btn=ttk.Button(window2,text="Reset Password",command=resetPassword)
         login_btn.pack(pady=10)
-    def vault():
+    def passwordvault():
         for widget in window2.winfo_children():
             widget.destroy()
             
@@ -314,7 +314,7 @@ def openVault():
         firstScreen()
     
        
-# ================================================(PASSWORD GENERATOR)=================================================================
+# ============================================(PASSWORD GENERATOR)=================================================================
 window=Tk()
 window.geometry('300x350')
 window.style=ttk.Style(window)
