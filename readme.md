@@ -18,7 +18,15 @@ A python app that allows the user to save passwords that belong to their various
 - Users can delete a credentials account that they no longer need in the application
 
 
+## requirments
 
+- One is required to install the folllowing modules in their program
+
+cffi==1.15.0
+cryptography==36.0.0
+pycparser==2.21
+pyperclip==1.8.2
+tkinter
 
 
 ## SETUP
