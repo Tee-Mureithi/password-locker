@@ -161,7 +161,7 @@ def openVault():
             return cursor.fetchall()
             
     
-        def checkRecovery():
+        def kRecovery():
             checked=getrecoverykey()
             if checked:
                 firstScreen()
