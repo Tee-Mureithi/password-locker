@@ -49,15 +49,9 @@ A python app that allows the user to save passwords that belong to their various
 
 # TECHNOLOGIES USED
 
-1. Angular 8
+1. Python3.8
 
-2. TypeScript
 
-3. Boostrap
-
-## Development server
----
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 
 ## Author
