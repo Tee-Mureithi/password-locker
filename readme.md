@@ -1,19 +1,21 @@
 # Python password manager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) 
+This project was generated with python3.8
 
 # DESCRIPTION
 
-An angular app to search for profiles and repos on github. It consumes the github api. A user enters the site, searches for the desired username in the search box and results are displayed. The user can view the repositories if any by tabbing on the repositories section.
+A python app that allows the user to save passwords that belong to their various accounts eg email,instagram and facebook
 
 ## User Story
-- User can search User
+- User can create password
 
-- Users can view Github User details.
+- Users can store existing account credentials
 
-- Users can see repositories.
+- Users can create new account credentials in the application
 
-- Users can access github account through image link
+- Users can view various account credentials and their passowrds
+
+- Users can delete a credentials account that they no longer need in the application
 
 
 # Prerequisites
