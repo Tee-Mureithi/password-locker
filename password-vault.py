@@ -213,7 +213,7 @@ def openVault():
         
         login_btn=ttk.Button(window2,text="Reset Password",command=resetPassword)
         login_btn.pack(pady=10)
-    def passwordvault():
+    def vault():
         for widget in window2.winfo_children():
             widget.destroy()
             
