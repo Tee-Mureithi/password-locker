@@ -171,7 +171,7 @@ def openVault():
         btn=ttk.Button(window2,text="Check key",command=checkRecovery)
         btn.pack(pady=10)
 
-    def Screen():
+    def loginScreen():
         for widget in window2.winfo_children():
             widget.destroy()
         window2.geometry("250x150")
