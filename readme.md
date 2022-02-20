@@ -18,23 +18,7 @@ A python app that allows the user to save passwords that belong to their various
 - Users can delete a credentials account that they no longer need in the application
 
 
-# Prerequisites
 
-To work with GitSearch you need to have some few preresuisites.
-
-This include the following mentioned however if you dont have the set below 
-
-- Node.js
-
-- Angular 8
-
-- Watchman
-
-- Typescript
-
-- Angular Cli
-
-If you dont have this requirements you could use the link above to help with the installation guide.
 
 
 ## SETUP
