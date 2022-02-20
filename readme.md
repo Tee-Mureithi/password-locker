@@ -21,13 +21,39 @@ A python app that allows the user to save passwords that belong to their various
 
 
 
+## SETUP
+---
+
+**To work With this python file {follow the below instructions for set up.}**
+
+1. You will need Internet connection.
+
+
+3. To get to use **Password-locker** fist you need to get to the Password locker  repository. 
+
+    [Link](https://github.com/Tee-Mureithi/)
+
+4. From there you can access password-locker.
+
+5. **Clone** or **Download project ZIP** the project.
+
+6. Once you done with cloning and project is on your device.
+
+7. get into project folder (cd into project).
+
+8. On your code ide run python file an there will be a window pop up:- 
+
+
+9. This will load for you password locker  as long as your requirements are satisfied.
 
 
 # TECHNOLOGIES USED
 
-1. Python 3.8
+1. Angular 8
 
+2. TypeScript
 
+3. Boostrap
 
 ## Development server
 ---
