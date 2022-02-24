@@ -6,7 +6,7 @@ import hashlib
 from sqlite3.dbapi2 import Cursor
 from tk import *
 import tk as tk
-from tkinter import simpledialog
+from tkinter import CENTER, DISABLED, NORMAL, IntVar, StringVar, Tk, Toplevel, simpledialog
 from tkinter.font import Font
 from functools import partial
 import uuid
